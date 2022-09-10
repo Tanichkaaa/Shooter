@@ -1,5 +1,5 @@
 # Shooter
-# Модулі та змінні - Артур
+
 from pygame import *
 from random import randint
 
@@ -32,7 +32,6 @@ font2 = font.Font(None, 36)
 win = font1.render('YOU WIN!', True, (255, 255, 255))
 lose = font1.render('YOU LOSE!', True, (180, 0, 0))
 
-# Опис класів - Стас
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_x, player_y, size_x, size_y, player_speed):
         super().__init__()
@@ -88,7 +87,7 @@ FPS = 60
 clock = time.Clock()
 finish = False
 
-# Ігровий цикл - Максим
+
 while run:
     for e in event.get():
         if e.type == QUIT:
